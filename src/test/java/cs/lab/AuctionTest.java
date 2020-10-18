@@ -30,7 +30,7 @@ public class AuctionTest {
         subject.registerObserver(observer);
         subject.removeObserver(observer);
         List<Observer> response = subject.getObservers();
-        Assert.assertEquals(0, response.size());
+        Assert.assertEquals(response.size(), 0);
     }
     //mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
 }
